@@ -1,28 +1,42 @@
 '''Calculadora de conversão de unidades'''
 
+import os               
+def limpar_tela():      #definindo a instrução que irá limpar a tela em cada iteração.
+    sistema = os.name
+    if sistema == "posix":  # Linux ou macOS
+        os.system("clear")
+    elif sistema == "nt":  # Windows
+        os.system("cls")
+        
 from tabulate import tabulate      #Importando biblioteca tabulate que nos fornece uma possibilidade de saída de tabelas.
 
 reset = int(1)  # Variavel para guardar meu reset inicial do programa
 
 while reset == 1:  # Enquanto reset é igual a 1 ele irá executar as intruções de conversão.
+    
+    limpar_tela()
+    
     print("=========TABELA DE MEDIDAS=========")
 
     print("Selecione o tipo de medida:")
     print("1 - Temperatura (Celsius, Fahr, Kelvin).")
     print("2 - Comprimento (Metros, Kilometros, Pés, Jardas).")
     print("3 - Peso (KG, Libras, Gramas, Miligramas).")
-    print("4 - Sair.\n")
+    print("4 - Sair.")
+    print("===================================")
     # Usuario digita o numero correspondente da medida.
     operacao = int(input("Digite o numero da opção: "))
 
     match operacao:
         case 1:  # Executado se o usuário escolher a opção 1.
+            limpar_tela()
+            print("=========TEMPERATURA=========")
             valor = float(input("Insira o valor da medida: "))
             celsiusFahr = float((valor * 9/5) + 32)
             celsiusK = float(valor + 273.15)
             fahrC = float((valor - 32) / 1.8000)
             fahrK = float((valor + 459.67) * 5/9)
-            kelvinC = float(valor * 273.15)
+            kelvinC = float(valor - 273.15)
             kelvinFahr = float((valor * 9/5) - 459.67)
 
             temperatura = [  # Estrutura da tabela para exibir os resultados de temperatura.
@@ -38,6 +52,8 @@ while reset == 1:  # Enquanto reset é igual a 1 ele irá executar as intruçõe
             print(tabulate(temperatura, headers="firstrow", tablefmt="heavy_grid"))
 
         case 2:  # Executado se o usuário escolher a opção 2.
+            limpar_tela()
+            print("=========COMPRIMENTO=========")
             valor = float(input("Insira o valor da medida: "))
             metroKm = float(valor / 1000)
             metroPes = float(valor * 3.281)
@@ -71,14 +87,16 @@ while reset == 1:  # Enquanto reset é igual a 1 ele irá executar as intruçõe
             print(tabulate(comprimento, headers="firstrow", tablefmt="heavy_grid"))
 
         case 3:  # Executado se o usuário escolher a opção 3.
+            limpar_tela()
+            print("=========PESO=========")
             valor = float(input("Insira o valor da medida: "))
             mgGrama = float(valor / 1000)
-            mgKg = float(valor / 1e-6)
+            mgKg = float(valor / 1000000)
             mgLibras = float(valor / 453600)
             gramaMg = float(valor * 1000)
             gramaKg = float(valor / 1000)
             gramaLibras = float(valor / 453.6)
-            kgMg = float(valor * 1e+6)
+            kgMg = float(valor * 1000000)
             kgGrama = float(valor * 1000)
             kgLibras = float(valor * 2.205)
             librasMg = float(valor * 453600)
@@ -88,7 +106,7 @@ while reset == 1:  # Enquanto reset é igual a 1 ele irá executar as intruçõe
             peso = [  # Estrutura da tabela para exibir os resultados de peso.
                 ["De", "Para", "Resultado"],
                 ["Miligrama", "Grama", f"{valor} mg = {mgGrama:.2f} g"],
-                ["Miligrama", "Kilograma", f"{valor} mg = {mgKg:.2f} Kg"],
+                ["Miligrama", "Kilograma", f"{valor} mg = {mgKg:.2f} kg"],
                 ["Miligrama", "Libra", f"{valor} mg = {mgLibras:.2f} lb"],
                 ["Grama", "Miligrama", f"{valor} g = {gramaMg:.2f} mg"],
                 ["Grama", "Kilograma", f"{valor} g = {gramaKg:.2f} kg"],
@@ -112,6 +130,8 @@ while reset == 1:  # Enquanto reset é igual a 1 ele irá executar as intruçõe
     # Opção do usuário reiniciar o programa, a instrução
     reset = int(input("Deseja reiniciar? 1 - Sim || 2 - Não\n"))
     # ...é feita em conjunto com o while reset == 1 do inicio.
-
+    if reset == 2:
+        limpar_tela()
 # É encerrado o programa quando a condição do while reset == 1 é dada como False.
+limpar_tela()
 print("Encerrando programa...")
