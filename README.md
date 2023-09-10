@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="C:/User/User/Desktop/projetoConversor/Demonstração.gif" alt="Demonstração do Programa">
-</p>
-
 # Calculadora de Conversão de Unidades em Python
 
 **Uma Calculadora Versátil para Conversões Rápidas e Precisas**
@@ -43,6 +39,12 @@ A Calculadora de Conversão de Unidades em Python é uma ferramenta flexível e 
 - **Opção de Peso**: Após inserir o valor, uma tabela com as conversões para Miligramas, Gramas, Quilogramas e Libras será gerada e exibida de forma organizada no console.
 
 6. **Opções Adicionais**: Você pode reiniciar o programa após cada conversão ou sair quando desejar.
+
+---
+
+<p align="center">
+  <img src="https://github.com/KaueMagnus/ConversorDeUnidadesPython/assets/122424590/3a4ab27c-6d80-4ca9-bfd1-1a62e2f8c9a7" alt="Demonstração do Programa">
+</p>   
 
 ---
 
