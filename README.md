@@ -8,29 +8,32 @@
 
 ---
 
-**Visão Geral**
+**ℹ️Visão Geral**
 
 A Calculadora de Conversão de Unidades em Python é uma ferramenta flexível e intuitiva que permite a conversão de medidas em várias categorias, tornando o processo de conversão rápido e descomplicado. 
 
 ---
 
-**Recursos Principais**
+**🚀Recursos Principais**
 
 - Conversão de unidades de temperatura (Celsius, Fahrenheit, Kelvin).
-- Conversão de unidades de comprimento (Metros, Kilômetros, Pés, Jardas).
+- Conversão de unidades de comprimento (Metros, Kilometros, Pés, Jardas).
 - Conversão de unidades de peso (Miligramas, Gramas, Quilogramas, Libras).
 
 ---
 
-**Como Usar**
+**:computer:Como Usar**
 
-1. **Clone o Repositório**: Clone este repositório em sua máquina local.    git clone https://github.com/KaueMagnus/ConversorDeUnidadesPython.git
+1. **Clone o Repositório**: Clone este repositório em sua máquina local.
+```
+git clone https://github.com/KaueMagnus/ConversorDeUnidadesPython
+```
 3. **Execute o Programa**: Inicie o programa Python.
-3. **Escolha o Tipo de Medida**: Selecione o tipo de medida (temperatura, comprimento ou peso) para obter uma tabela de conversão.
+4. **Escolha o Tipo de Medida**: Selecione o tipo de medida (temperatura, comprimento ou peso) para obter uma tabela de conversão.
 
-4. **Insira um Valor**: Digite um valor que deseja converter de acordo com a categoria escolhida.
+5. **Insira um Valor**: Digite um valor que deseja converter de acordo com a categoria escolhida.
 
-5. **Visualize a Tabela de Conversão**:
+6. **Visualize a Tabela de Conversão**:
 
 - **Opção de Temperatura**: Após inserir o valor, uma tabela com as conversões para Celsius, Fahrenheit e Kelvin será gerada e exibida de forma organizada no console.
 
@@ -48,14 +51,14 @@ A Calculadora de Conversão de Unidades em Python é uma ferramenta flexível e 
 
 ---
 
-**Licença**
+:exclamation:**Licença**
 
 Este projeto é distribuído sob a [Licença MIT](LICENSE), o que significa que você pode usá-lo, modificar e compartilhá-lo livremente.
 
 ---
 
-**Autor**
+## :boy: Kaue Marques Magnus
+[<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/kaue-marques-magnus-392866262/)
+[<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />](https://github.com/KaueMagnus)
+[<img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" />](https://wa.me/5548996601083)
 
-Kaue Marques Magnus
-
----
