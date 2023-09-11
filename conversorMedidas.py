@@ -19,9 +19,9 @@ while reset == 1:  # Enquanto reset é igual a 1 ele irá executar as intruçõe
     print("=========TABELA DE MEDIDAS=========")
 
     print("Selecione o tipo de medida:")
-    print("1 - Temperatura (Celsius, Fahr, Kelvin).")
+    print("1 - Temperatura (Celsius, Fahrnheit, Kelvin).")
     print("2 - Comprimento (Metros, Kilometros, Pés, Jardas).")
-    print("3 - Peso (KG, Libras, Gramas, Miligramas).")
+    print("3 - Peso (Quilogramas, Libras, Gramas, Miligramas).")
     print("4 - Sair.")
     print("===================================")
     # Usuario digita o numero correspondente da medida.
@@ -106,17 +106,17 @@ while reset == 1:  # Enquanto reset é igual a 1 ele irá executar as intruçõe
             peso = [  # Estrutura da tabela para exibir os resultados de peso.
                 ["De", "Para", "Resultado"],
                 ["Miligrama", "Grama", f"{valor} mg = {mgGrama:.2f} g"],
-                ["Miligrama", "Kilograma", f"{valor} mg = {mgKg:.2f} kg"],
+                ["Miligrama", "Quilograma", f"{valor} mg = {mgKg:.2f} kg"],
                 ["Miligrama", "Libra", f"{valor} mg = {mgLibras:.2f} lb"],
                 ["Grama", "Miligrama", f"{valor} g = {gramaMg:.2f} mg"],
-                ["Grama", "Kilograma", f"{valor} g = {gramaKg:.2f} kg"],
+                ["Grama", "Quilograma", f"{valor} g = {gramaKg:.2f} kg"],
                 ["Grama", "Libra", f"{valor} g = {gramaLibras:.2f} lb"],
                 ["Quilograma", "Miligrama", f"{valor} kg = {kgMg:.2f} mg"],
                 ["Quilograma", "Grama", f"{valor} kg = {kgGrama:.2f} g"],
                 ["Quilograma", "Libra", f"{valor} kg = {kgLibras:.2f} lb"],
                 ["Libra", "Miligrama", f"{valor} lb = {librasMg:.2f} mg"],
                 ["Libra", "Grama", f"{valor} lb = {librasGramas:.2f} g"],
-                ["Libra", "Kilograma", f"{valor} lb = {librasKg:.2f} kg"]
+                ["Libra", "Quilograma", f"{valor} lb = {librasKg:.2f} kg"]
             ]
             # Instrução para exibir a tabela estruturada.
             print(tabulate(peso, headers="firstrow", tablefmt="heavy_grid"))
